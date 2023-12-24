@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Three Iframes Layout</title>
+        <style>
+            /* General styling */
+            body {
+                margin: 0;
+                padding: 0;
+                font-family: Arial, sans-serif;
+            }
+            iframe {
+                border: none; /* Remove iframe borders */
+            }
+    
+            .full-width {
+                width: 100%;
+                height: 1000px; /* Set the height as needed */
+                display: block;
+            }
+    
+            .half-width {
+                width: 50%;
+                height: 1000px; /* Set the height as needed */
+                display: inline-block;
+                box-sizing: border-box; /* Include padding and borders in width */
+            }
+    
+            .side-by-side-container {
+                font-size: 0; /* Remove inline-block space */
+                width: 100%;
+                white-space: nowrap; /* Prevent line break */
+            }
+        </style>
+    </head>
+    <body>
+        <iframe class="full-width" src="palletViz.html"></iframe>
+        <div class="side-by-side-container">
+            <!--<iframe class="half-width" src="imagespace.html"></iframe>
+            <iframe class="half-width" src="colorspace.html"></iframe>-->
+        </div>
+    </body>
+</html>
